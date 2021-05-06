@@ -1,6 +1,4 @@
 class Author < ApplicationRecord
-  # include PgSearch::Model
-  # multisearchable against: [:name, :genres]
 
   has_many :books
   validates :name, :biography, :genres, :presence => true  
